@@ -1,42 +1,48 @@
-# warface-emulator
+# Open Warface Server
 
 Emulator client warface, wip 25%.
 
-# Suporte server client game
+# Поддержка клиента
 
-Warface beta russo: version 1.1.1.129, 1.11500.950.41200
+Warface Россия: version 1.1.1.129, 1.11500.950.41200
 
-Warface br: version 1.1.1.71, 1.1.1.205, 1.1.1.281, 1.1.1.351, 1.12300.552.21500, 1.11900.396.25700, 1.12600.570.21500
+Warface Бразилия: version 1.1.1.71, 1.1.1.205, 1.1.1.281, 1.1.1.351, 1.12300.552.21500, 1.11900.396.25700, 1.12600.570.21500
 
-Varface vietnam: 1.12300.428.18900, 1.12600.450.18900
+Varface Вьетнам: 1.12300.428.18900, 1.12600.450.18900
 
-# What works?
+Преимущественно тестируется на Российской и Бразильской версии лета 2016 года
+
+# Что работает
 
 Lobby, invetory, statistics, career, clans and other things.
+Отсылается статический ответ от сервера, позволяющий залогинится и посмотреть некоторую информацию,
+профиль персонажа не сохраняется (пока что), коробки удачи глючат, но их развитие запланировано
 
-# HOW TO START WARFACE EMULATOR !!!!
 
-1 - Install Node.JS, Redis Server, MongoDB, Node-Webkit(Launcher)
+# *********************************
+# * Node.JS Warface ЭМУЛЯТОР	    *
+# * 2016-2017, Rommel, settimeout *
+# * Particular Levak92            *
+# * Fork by ChiptuneXT, 2017	    *
+# * Ver: ПРОТОТИП 3, РЕВИЗИЯ 1	  *
+# *********************************
 
-2 - Extract Files in C:/ Disk
+# КРАТКАЯ ИНСТРУКЦИЯ:
 
-3 - Go to Main C:/ and Create past data in data past create db past (data/db)
+1. Установите MongoDB с поддержкой SSL
+2. Создайте путь C:/Data/db
+3. Запустите Mongod (C:\Program Files\MongoDB\3.x\bin)
+4. Установите node.js
+5. Запустите Redis Server (в комплекте)
+6. Перейдите в папку API-GA через терминал, исполните: node server
+Примечание: Это необходимо для предоставления серверу данных об аккаунте (вы можете отредактировать server.js для изменения данных аккаунта)
+7. Чтобы запустить сервер, перейдите в папку warface-xmpp-tls и запустите терминал от сюда. Введите: node xmpp-server
+8. Ура, все работает (Если вы увидите сообщение " Warface Privado! Servidor XMPP iniciado!")
+9. Поместите папку "Launcher-loc" в клиент Warface и отредактируйте Launcher-loc\assets\js\app.js если вы сменили ник
+10. Перетяните папку "Launcher-loc" в файл nw.exe (в комплекте)
+11. Всегда читайте вывод терминала: он поможет вам понять в чем была допущена ошибка
+Запускайте всегда от имени администратора!
 
-4 - Start Mongodb (Open cmd and type: cd C:\Program Files\MongoDB\Server\3.2\bin after this type node mongod)
-
-5 - Go to Api warface emulator and create you account
-
-6 - Go to Launcher folder and Open past's : Warface\launcher - warface\assets\js and Edit you Login in js file
-
-7 - After this start : Redis server (Click in redis-server) 
-
-8 - Now you Need Start Emulator.. Open CMD and Type: cd C:\EMULATOR FOLDER\warface-emulator-xmpp after this type: node xmpp-server
-
-10 - Well, All Working (If you receive messege " Warface Privado! Servidor XMPP iniciado!")
-
-11 - Drag "launcher - warface" Folder to node webkit (nw.exe)
-
-12 - Click in Start WarFaace and Good Luck!!!
 
 
 
