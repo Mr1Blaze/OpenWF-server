@@ -1,5 +1,5 @@
 {
-  "name": "node-token-jwt",
+  "name": "api-ga",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.0",
