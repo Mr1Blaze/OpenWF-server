@@ -14,7 +14,7 @@ var User = mongoose.model('User', new Schema({
 		    unique: true, dropDups: true
 		},
 		validate: [
-		    { validator: usernameVrExist, msg: 'Nome de usuário já existe.'}
+		    { validator: usernameVrExist, msg: 'Username already exists!'}
 		]
 	}, 
     nickname: String,

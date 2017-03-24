@@ -9,7 +9,7 @@ var Missions = mongoose.model('Missions', new Schema({
         type: String,
         required: true,
         validate: [
-            { validator: missionVrExist, msg: 'Missão já existe.'}
+            { validator: missionVrExist, msg: 'Mission already exists!'}
         ]
     },
     no_teams: String,

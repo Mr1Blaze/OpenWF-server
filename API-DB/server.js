@@ -32,9 +32,11 @@ let newUserGamer = new User({
     userid: randomid(5),
     profileid: randomid(6),
     username: 'admin',
-    nickname: 'ChiptuneXT',
+    nickname: 'ADMIN1',
     affiliateid: 'CYT000000000',
     password: '12345',
+	current_class: '55',
+    experience: '7364000',
     email: 'admin@warface.com',
     lang: 'pt-br' // idk how RU
 });
@@ -60,7 +62,7 @@ newUserGamer.save(function(err) {
       banner_badge: '4294967295',
       banner_mark: '4294967295',
       banner_stripe: '4294967295',
-      game_money: '655360',
+      game_money: '65536',
       cry_money: '8192',
       crown_money: '8192',
       items: [{

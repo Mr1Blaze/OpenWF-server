@@ -59,8 +59,8 @@ exports.run = function(config, ready) {
     //Ping.configure(server, config.ping);
 
     console.log("-------------------------------------"+"\n"+
-        "Warface Privado!"+"\n"+
-        "Servidor XMPP iniciado!"+"\n"+
+        "OpenWF Server ver 0.5!"+"\n"+
+        "XMPP Server run OK!"+"\n"+
         "-------------------------------------")
     
     
@@ -70,6 +70,7 @@ exports.run = function(config, ready) {
         // Allows the developer to authenticate users against anything they want.
         client.on("authenticate", function(opts, cb) {
             User.findOne({username: opts.jid.local}, function(err, user) {
+				console.log('Only admin nickname is allowed!', Math.random())
                 if (user.username && opts.password)
                     cb(null, opts);
                 else
@@ -79,7 +80,7 @@ exports.run = function(config, ready) {
 
         // On Disconnect event. When a client disconnects
         client.on("disconnect", function(client) {
-            console.log('saiu do jogo!', Math.random())
+            console.log('User logout!', Math.random())
         });
 
     });
